@@ -1,0 +1,22 @@
+// --------------------------------------------------------------------------
+//   Layout
+//---------------------------------------------------------------------------
+
+// Setting up the Magic Grid
+
+$small: 4;
+$medium: 8;
+$large: 12;
+
+$total-columns: $small; // 6 columns
+$column-width: 4rem; // columns are 4em wide
+$gutter-width: 2.500rem; // with 2.500em gutters
+$grid-padding: 1rem; // and 1em padding on the grid container
+
+$container-width: 73.750rem;
+
+.grid {
+  @include container($total-columns, $medium);
+  @include container($total-columns, $large);
+  //@include susy-grid-background;
+}
