@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: 'sass',
                     cssDir: 'css',
-                    require: 'susy',
+                    //bundleExec: true,
+                    require: ['breakpoint', 'susy'],
                     outputStyle: 'expanded'
                 }
             }
